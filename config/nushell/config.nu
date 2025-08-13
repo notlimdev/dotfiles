@@ -897,12 +897,5 @@ $env.config = {
     ]
 }
 
-alias postgresrender = psql 'postgresql://quioscodb_fe98_user:xXXNPvsTqHpHaCTkrdFyl1p0PC5UtDXR@dpg-csq29hl2ng1s7398j3k0-a.oregon-postgres.render.com/quioscodb_fe98'
-
-
-alias db_bookmarks = psql 'postgresql://notlim_dev:milton123@localhost:5432/bookmarks_db'
-
-alias db_neon = psql 'postgresql://neondb_owner:npg_W6gTndfeRh1F@ep-aged-morning-a4f9jbqn-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require'
-
 $env.config.show_banner = false
 
