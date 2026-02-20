@@ -1,0 +1,68 @@
+return {
+  -- {
+  --   "MeanderingProgrammer/render-markdown.nvim",
+  --   opts = {
+  --     code = {
+  --       sign = false,
+  --       width = "block",
+  --       right_pad = 1,
+  --     },
+  --     heading = {
+  --       enabled = true,
+  --       sign = true,
+  --       style = "full",
+  --       icons = { "① ", "② ", "③ ", "④ ", "⑤ ", "⑥ " },
+  --       left_pad = 1,
+  --     },
+  --     checkbox = {
+  --       enabled = true,
+  --     },
+  --   },
+  --   ft = { "markdown", "norg", "rmd", "org", "codecompanion" },
+  --   config = function(_, opts)
+  --     require("render-markdown").setup(opts)
+  --     Snacks.toggle({
+  --       name = "Render Markdown",
+  --       get = function()
+  --         return require("render-markdown.state").enabled
+  --       end,
+  --       set = function(enabled)
+  --         local m = require("render-markdown")
+  --         if enabled then
+  --           m.enable()
+  --         else
+  --           m.disable()
+  --         end
+  --       end,
+  --     }):map("<leader>um")
+  --   end,
+  -- },
+  -- {
+  --   "vhyrro/luarocks.nvim",
+  --   priority = 1001, -- this plugin needs to run before anything else
+  --   opts = {
+  --     rocks = { "magick" },
+  --   },
+  -- },
+  -- {
+  --   "3rd/image.nvim",
+  --   dependencies = { "luarocks.nvim" },
+  --   opts = {
+  --     backend = "ueberzug",
+  --     integrations = {
+  --       markdown = {
+  --         enabled = true,
+  --         only_render_image_at_cursor = true, -- Mantén las imágenes visibles siempre
+  --         floating_windows = true, -- Evita que se rendericen en ventanas flotantes
+  --       },
+  --     },
+  --     max_width = nil,
+  --     max_height = nil,
+  --     window_overlap_clear_enabled = true,
+  --     max_width_window_percentage = 50, -- 100% del ancho de la ventana
+  --     max_height_window_percentage = 50, -- 50% de la altura de la ventana
+  --     editor_only_render_when_focused = true, -- Renderiza imágenes incluso sin foco
+  --     tmux_show_only_in_active_window = true,
+  --   },
+  -- },
+}
