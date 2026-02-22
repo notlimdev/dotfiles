@@ -1,0 +1,42 @@
+
+xterm*faceName: JetBrainsMono Nerd Font Mono
+xterm*faceSize: 10.5
+
+xterm*foreground: white
+xterm*background: black
+xterm*cursorColor: red
+
+! Colores normales
+xterm*color0:  #000000
+xterm*color1:  #ff5555
+xterm*color2:  #50fa7b
+xterm*color3:  #f1fa8c
+xterm*color4:  #bd93f9
+xterm*color5:  #ff79c6
+xterm*color6:  #8be9fd
+xterm*color7:  #bbbbbb
+
+! Colores brillantes
+xterm*color8:  #44475a
+xterm*color9:  #ff6e6e
+xterm*color10: #69ff94
+xterm*color11: #ffffa5
+xterm*color12: #d6acff
+xterm*color13: #ff92df
+xterm*color14: #a4ffff
+xterm*color15: #ffffff
+
+xterm*scrollBar: false
+
+XTerm*vt100.translations: #override \
+    Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
+
+XTerm*backarrowKey: false
+
+! Transparencia
+
+XTerm*background: rgba:0000/0000/0000/c800
+XTerm*foreground: #FFFFFF
+XTerm*fade: 30
+XTerm*vt100.transparent: true
