@@ -1,0 +1,279 @@
+reset
+ls
+ls | where size > 1kb
+ls | where size > 2gb
+ls | where size > 1gb
+ps
+help commands | where name == each | first
+exit
+get http://localhost:5173/api/projects
+http get http://localhost:5173/api/projects
+http GET http://localhost:4000/api/projects/672a7a273fff4fae4bb53bc3/tasks
+http get http://localhost:4000/api/projects/672a7a273fff4fae4bb53bc3/tasks
+http get https://api.publicapis.org/entries
+http get https://api.publicapis.org/entries | first 5
+http get https://www.boredapi.com/api/activity
+http get https://dog.ceo/api/breeds/image/random
+clear
+clear --keep-scrollback 
+http get https://official-joke-api.appspot.com/random_joke
+http get http://universities.hipolabs.com/search?country=United+States
+http get http://universities.hipolabs.com/search?country=United+States | first 5 
+nvm ls-remote
+sudo -iu postgres 
+open psql -U postgres -d bdtestproductos -c "SELECT * FROM products;" --json | from json | table
+open psql -d bdtestproductos -c "SELECT * FROM products;" --json | from json | table
+help psql
+plugin list
+[ nu_plugin_inc<\n>  nu_plugin_polars<\n>  nu_plugin_gstat<\n>  nu_plugin_formats<\n>  nu_plugin_query<\n>] | each { cargo install $in } | ignore
+plugin list 
+cd ~/.config/nushell/
+cd plugins/
+cd nupsql/
+cargo install --path .
+nvim_lazy
+nvim
+cd
+psql 
+psql help
+psql -h localhost -U postgres -d bdtestproducts
+psql -h localhost -U postgres -d bdtestproductos
+open psql -h localhost -U postgres -d bdtestproductos -c "SELECT * FROM products;" --json | from json | table
+echo "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos
+let resultados = echo "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos -A -F"," | split-row -s ","<\n>$resultados
+let resultados = "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos
+$resultados
+$resultados | to json
+$resultados | to csv
+let resultados = "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos --tuples-only | from csv | table
+$resltados
+let resultados = "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos | from csv | table<\n>
+let resultados = "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos | from csv | table
+let resultados = "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos | from csv | where price > 1000 | table
+let resultados = "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos | from csv | where price > 100 | table
+let resultados = "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos | from csv | first 1
+let resultados = "SELECT * FROM products;" | psql -h localhost -U postgres -d bdtestproductos | from csv | where "price" > 1000 | table
+cd ~/lkmvg/app-nextjs/
+open package.json
+vim .zshrc
+nvim .zshrc
+postgresrender
+cat .zshrc
+nvim config.nu
+lsmvg
+nvim env.nu
+nvim_lazy env.nu
+nvim_lazy config.nu
+let resultados = "SELECT * FROM Product;" | postgresrender | from csv | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | from csv | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender --format csv | from csv | table
+let resultados = 'SELECT * FROM "Product";' | psql -h dpg-csq29hl2ng1s7398j3k0-a.oregon-postgres.render.com -U quioscodb_fe98_user -d quioscodb_fe98 -p 5432 | from csv | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | echo $it
+let resultados = 'SELECT * FROM "Product";' | postgresrender | from json | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | from xml | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | from msgpack | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | from xml  | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | lines
+let resultados = 'SELECT * FROM "Product";' | postgresrender > output.csv<\n>open output.csv | from csv | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | lines | split column "," | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | from ini  | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | from nuon  | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender | from ods  | table
+let resultados = 'SELECT * FROM "Product";' | postgresrender<\n>echo $resultados
+let resultados = 'COPY (SELECT * FROM "Product") TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+let resultados = 'COPY (SELECT * FROM "Category") TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+let resultados = 'COPY (\dt) TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+let resultados = 'COPY (SELECT table_name FROM information_schema.tables WHERE table_schema = ''public'') TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+let resultados = 'COPY (SELECT table_name FROM information_schema.tables WHERE table_schema = 'public') TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+cd myextension/
+cd 
+cd  dotfiles/
+cd archivos-importantes-lazyvim/
+cat plugins.lua
+let resultadosOrder = 'COPY (SELECT * FROM "order") TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+let resultadosOrder = 'COPY (SELECT * FROM "Order") TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+$resultadosOrder
+let resultadosOrderProducts = 'COPY (SELECT * FROM "OrderProducts") TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+$resultadosOrderProducts
+let resultadosProducts = 'COPY (SELECT * FROM "Product") TO STDOUT WITH CSV HEADER;' | postgresrender | from csv | table
+$resultadosProducts
+let deleteregister = 'DELETE FROM "Product" WHERE "id" = 60;' | postgresrender
+$deleteregister
+let deleteregister = 'DELETE FROM "Product" WHERE "id" = 61;' | postgresrender
+let deleteregister = 'DELETE FROM "Product" WHERE "id" = 62;' | postgresrender
+let deleteregister = 'DELETE FROM "Product" WHERE "id" = 63;' | postgresrender
+let deleteregister = 'DELETE FROM "Product" WHERE "id" = 64;' | postgresrender
+let deleteregister = 'DELETE FROM "Product" WHERE "id" = 65;' | postgresrender
+cd Documentos/portafoliomvg/
+exir
+cd public/
+ip address show
+yazi
+cd portafolio2025/
+cd notlimdev-portfolio-2025/
+cd texturesGeometry/
+python --version
+ls | where size < 500mb
+ls | where file ".txt"
+ls | where file .txt
+ls | where file ?
+ls | where file 
+ecit
+help
+pwd
+ls | where name == "textprovicional"
+ls where size > 5mb
+ls | where size > 5mb
+ls | where size > 1mb
+ps 
+kill 73370
+ls | sort-by size
+ls | sort-by size --reverse
+open textprovicional | find "developer"
+ls | select name size
+ls | length 
+history 
+let mi_variable = "Hola, Nushell"
+$mi_variable
+5+7
+5 + 7
+12 + 8
+"123" | into int
+42 | into string 
+let archivos = (ls)
+$archivos
+nu --version
+ls | where type == "dir"
+ls | where name ends-with ".zip"
+cd  Descargas/
+unzip -l estructura_paquete.zip
+mkdir py
+unzip estructura_paquete.zip -d py/
+cd .config/nushell/
+nvim history.txt
+cd learning-c++/
+open learing_python_temp
+cd (learing_python_temp)
+ls -ls learing_python_temp
+open learing_python_temp/
+cd (realpath learing_python_temp)
+enter learing_python_temp
+zsh 
+alias curso_py = {cd (realpath learing_python_temp)}
+fish 
+xonsh 
+df -h
+cd /tmp/
+/boot/
+ls | where name ends-with ".py"
+ls | where name "ls"
+ls | where name "ls.txt"
+ls | where name top_procesos.txt
+ls | where name "top_procesos.txt"
+ls | wherels | where type == "dir"
+cd portafolio2025/my-portfolio-astro/
+let conexion = psql -h localhost -U notlim_dev -d bookmarks_dev
+let conexion = psql -h localhost -U notlim_dev -d bookmarks_db
+echo "SELECT * FROM products;" | psql -h 127.0.0.1 -U notlim_dev -d bookmarks_db
+echo "SELECT * FROM bookmarks;" | psql -h 127.0.0.1 -U notlim_dev -d bookmarks_db
+echo "SELECT * FROM bookmarks;" | psql -h 127.0.0.1 -U postgres -d bookmarks_db
+let resultadosBookmark = 'COPY (SELECT * FROM "users") TO STDOUT WITH CSV HEADER;' | db_bookmarks  | from csv | table
+let resultadosBookmark = 'COPY (SELECT * FROM "users") TO STDOUT WITH CSV HEADER;' | $db_bookmarks | from csv | table<\n>
+let resultadosBookmark = 'COPY (SELECT * FROM "users") TO STDOUT WITH CSV HEADER;' | $db_bookmarks | from csv | table
+let resultadosBookmark = $db_bookmarks 'COPY (SELECT * FROM "users") TO STDOUT WITH CSV HEADER;' | from csv | table
+let resultadosBookmark = $db_bookmarks 'COPY (SELECT * FROM "users") TO STDOUT WITH CSV HEADER;'
+let query = 'COPY (SELECT * FROM "users") TO STDOUT WITH CSV HEADER;'
+let resultadosBookmark = $db_bookmarks $query
+psql -U postgres
+psql -U milton
+psql -U notlim_dev
+psql -U bookmarks_db
+psql postgresql://notlim_dev:milton123@localhost:5432/bookmarks_db?schema=public
+psql 'postgresql://notlim_dev:milton123@localhost:5432/bookmarks_db?schema=public'
+psql 'postgresql://notlim_dev:milton123@localhost:5432/bookmarks'
+psql 'postgresql://notlim_dev:milton123@localhost:5432/bookmarks_db'
+let resultadosBookmark = 'COPY (SELECT * FROM "users") TO STDOUT WITH CSV HEADER;' | db_bookmarks | from csv | table
+echo resultadosBookmark
+$resultadosBookmark
+let db_categorias = 'COPY (SELECT * FROM "categories") TO STDOUT WITH CSV HEADER;' | db_bookmarks | from csv | table
+$db_categorias
+let dt_bookmarks = 'COPY (SELECT * FROM "bookmarks") TO STDOUT WITH CSV HEADER;' | db_bookmarks | from csv | table
+$dt_bookmarks
+let endpoint = curl -X GET http://localhost:3000/bookmarks -H "Content-Type: application/json"
+$endpoint
+cat $endpoint
+ls | where type == "txt"
+open dataset01.csv | first 10
+open archivo.csv | first 10 | table
+open dataset01.csv | first 10 | table
+open archivo.csv | first 10 | to csv | less -S
+open dataset01.csv | first 10 | to csv | less -S
+open dataset01.csv | select FONDO CONCURSO ANIO CONTRATO | fisrt 10 | table
+open dataset01.csv | select FONDO CONCURSO ANIO CONTRATO | first 10 | table
+open dataset01.csv | columns 
+open dataset01.csv | columns | first 1
+head dataset01.csv
+open dataset01.csv --raw | from csv | columns
+polars open dataset01.csv --head 10
+exirt
+polars -c "SELECT * FROM read_csv('dataset01.csv') LIMIT 5"
+polars -c "DESCRIBE SELECT * FROM read_csv('dataset01.csv')"
+polars dataset01.csv -c "SELECT * FROM df LIMIT 5" --output table
+polars dataset01.csv -c "DESCRIBE df"
+wc -l dataset01.csv
+head -5 dataset01.csv
+head -1 dataset01.csv
+open dataset01.csv | first 40| table
+open alumnos_matriculados_educacion_secundaria_gestion_privada.csv | table 
+open alumnos_matriculados_educacion_secundaria_gestion_publica.csv | last |table 
+open numero_titulados_universiades_privadas.csv | table 
+open numero_graduados_universaidades_publicas.csv | table 
+open numeros_de_graduados_univeraidades_privadas.csv | table 
+open numeros_alumnos_matricualdos_universidades_publicas.csv | table 
+open numeros_alumnos_matriculados_universidades_privadas.csv | table 
+cd ..
+open ejecucionfulldatos.csv | table 
+open Hogares_que_acceden_al_servicos_deinternet_ambitos_geograficos.csv | first 10 | table 
+open Hogares_que_acceden_al_servicos_deinternet_ambitos_geograficos.csv | table 
+open Hogares_que_tienen_almenos_una_computadora_ambitos_geograficos.csv | table 
+open Hogares_que_tlagun_miembro_tiene_celular_ambitos_geograficos.xlsx.csv | table
+open Hogares_que_tlagun_miembro_tiene_celular_ambitos_geograficos.xlsx.csv | table 
+open universidades_por_region.csv | table
+open patents.csv | table 
+open pbi_peru_15.csv | table 
+open pobreza.csv | table
+open docentes_sistema_educativo_sector_privado.csv
+open alumnos_matriculados_educacion_secundaria_gestion_publica.csv
+open alumnos_matriculados_segun_departamento.csv
+open docentes_sistema_educativo_sector_privado.csv |table 
+open docentes_sistemas_educativo_sector_publico.csv | table
+open nievel_de_educacion_alcanzado.csv | table
+open promedio_alcanzado.csv | table
+open let resultadosBookmarks = 'COPY (SELECT * FROM "bookmarks") TO STDOUT WITH CSV HEADER;' | db_neon   | from csv | table
+open let resultadosBookmarks = 'COPY (SELECT * FROM "bookmarks") TO STDOUT WITH CSV HEADER;' | db_neon| from csv | table
+open let resultadosBookmarks = 'COPY (SELECT * FROM "bookmarks") TO STDOUT WITH CSV HEADER;' | db_neon
+open let resultadosBookmarks = 'COPY (SELECT * FROM "bookmarks") TO STDOUT WITH CSV HEADER;' | db_neon | from csv 
+let resultadosBookmarks = 'COPY (SELECT * FROM "bookmarks") TO STDOUT WITH CSV HEADER;' | db_neon | from csv 
+open $resultadosBookmarks | table 
+open $resultadosBookmarks
+open $resultadosBookmarks | from csv  | table 
+let converterString = convert($resultadosBookmarks)
+let converterString = strings($resultadosBookmarks)
+let converterString = parse($resultadosBookmarks)
+open let resultadosBookmarks = 'COPY (SELECT * FROM "bookmarks") TO STDOUT WITH CSV HEADER;' | db_neon | from csv | table
+head $resultadosBookmarks
+polars $resultadosBookmarks
+db_neon
+exa
+ls | where  name
+cd Grabaciones/
+node --version
+ls
+reset
+ls
+nvim
+reset
+exit
+ls
+exit

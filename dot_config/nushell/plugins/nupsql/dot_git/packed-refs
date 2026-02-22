@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled sorted 
+1cf4f8b982fbf93016c4e2d2d73e3a34c353050c refs/remotes/origin/dependabot/cargo/generic-array-0.9.1
+56bc0e281c80edb3794bbabe08a88ed900e5cc75 refs/remotes/origin/dependabot/cargo/ordered-float-1.1.1
+c8c41f54c9ef59ebdf57b290fb1653777111c397 refs/remotes/origin/dependabot/cargo/smallvec-1.8.0
+92b3001d738c038a25a7508ba697440f16e4e623 refs/remotes/origin/dependabot/cargo/socket2-0.3.19
+18b40b916e629844d101c7fa7ff255d6e5fe5195 refs/remotes/origin/dependabot/cargo/thread_local-1.1.4
+09a46f16aca59280c4c65fe175b49b84ae256c88 refs/remotes/origin/master

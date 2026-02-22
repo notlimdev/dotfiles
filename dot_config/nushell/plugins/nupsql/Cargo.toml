@@ -1,0 +1,16 @@
+[package]
+name = "nupsql"
+version = "0.2.0"
+authors = ["Pirmin Kalberer <pka@sourcepole.ch>"]
+edition = "2018"
+
+[[bin]]
+name = "nu_plugin_psql"
+path = "src/main.rs"
+
+[dependencies]
+nu-plugin = "~0"
+nu-protocol = "~0"
+nu-source = "~0"
+nu-errors = "~0"
+postgres = "0.15"
