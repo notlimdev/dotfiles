@@ -1,0 +1,9 @@
+
+#!/bin/bash
+
+choice=$(printf "No\nSí" | \
+wofi --dmenu \
+     --conf="/home/notlim_dev/.config/wofi/confirm.conf")
+
+[ "$choice" = "Sí" ] && hyprctl dispatch closewindow activewindow
+
