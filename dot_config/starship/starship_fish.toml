@@ -20,6 +20,7 @@ $python\
 $rust\
 $golang\
 $c\
+$cpp\
 [](fg:turquoise bg:pine)\
 $conda\
 [](fg:pine bg:snow)\
@@ -31,6 +32,10 @@ $character
 # -------------- TIME SCAN FILES -----
 
 scan_timeout = 300
+
+# -------------- TIME SCAN FILES -----
+
+command_timeout = 1000
 
 # ---------------- OS ----------------
 
@@ -103,19 +108,23 @@ format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = " "
-style = "bg:teal fg:base"
+style = "turquoise fg:text"
 format = '[ $symbol ($version) ]($style)'
 
 [golang]
-symbol = " "
-style = "bg:teal fg:base"
+symbol = "⭘"
+style = "bg:turquoise fg:text"
 format = '[ $symbol ($version) ]($style)'
 
 [c]
 symbol = " "
-style = "bg:teal fg:base"
+style = "bg:turquoise fg:text"
 format = '[ $symbol ($version) ]($style)'
 
+[cpp]
+disabled = false
+style = "bg:turquoise fg:text"
+format = '[ $name ($version) ]($style)'
 # ---------------- CONDA ----------------
 
 [conda]
