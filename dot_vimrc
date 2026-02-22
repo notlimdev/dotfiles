@@ -1,0 +1,29 @@
+
+call plug#begin('~/.vim/plugged')
+
+" Status line (ligero)
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Lenguajes básicos (elige manualmente si necesitas más)
+"Plug 'pangloss/vim-javascript'
+"Plug 'leafgarland/typescript-vim'
+
+" File explorer
+Plug 'scrooloose/nerdtree'
+
+" Auto-pairs
+Plug 'jiangmiao/auto-pairs'
+
+" Solo un tema (elige uno)
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+call plug#end()
+
+" Tema y opciones
+syntax enable
+set background=dark
+colorscheme dracula
+let g:airline#extensions#tabline#enabled = 1
+set termguicolors
+
