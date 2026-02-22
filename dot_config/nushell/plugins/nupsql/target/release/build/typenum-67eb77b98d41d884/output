@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/notlim_dev/.config/nushell/plugins/nupsql/target/release/build/typenum-67eb77b98d41d884/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/notlim_dev/.config/nushell/plugins/nupsql/target/release/build/typenum-67eb77b98d41d884/out/op.rs
