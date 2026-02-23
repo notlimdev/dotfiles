@@ -1,10 +1,9 @@
-
 "$schema" = 'https://starship.rs/config-schema.json'
 
 palette = 'catppuccin_mocha'
 
 format = """
-[┌────](fg:lavender)\
+[┌──](fg:lavender)\
 [](fg:base)\
 $os\
 $username\
@@ -25,6 +24,7 @@ $cpp\
 $conda\
 [](fg:pine bg:snow)\
 $time\
+$cmd_duration\
 [ ](fg:snow)
 [└─](fg:lavender)\
 $character
@@ -131,6 +131,13 @@ format = '[ $name ($version) ]($style)'
 symbol = " "
 style = "bg:pine fg:text"
 format = '[ $symbol $environment ]($style)'
+
+# --------------- CMD DURATION --------
+
+[cmd_duration]
+min_time = 500
+style = "bg:snow fg:text"
+format = '[[ ⏱ $duration ](fg:#f9c74f bg:#1d2230)]($style)'
 
 # ---------------- TIME ----------------
 
