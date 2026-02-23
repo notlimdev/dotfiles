@@ -11,9 +11,6 @@ end, { desc = "Terminal (Root Dir)" })
 -- Mapas para cerrar la terminal desde el modo terminal
 vim.keymap.set("t", "<C-t>", "<cmd>close<cr>", { desc = "Hide Terminal" })
 
--- Keymaps para arbir yazi en lazyvim
-vim.keymap.set("n", "<leader>fy", "<cmd>Yazi<cr>", { desc = "Explorer Files Yazi" })
-
 -- buscador de emojis
 
 vim.api.nvim_set_keymap("n", "<leader>se", ":Emoji<CR>", { noremap = true, silent = true })
