@@ -187,7 +187,7 @@ conda_init() {
 
 ## ---------ALIAS PARA TOMAR CAPTURA EN WAYLAND---
 captura_pantalla() {
-  FILE="~/Imágenes/ScreenShots/captura_$(date +%Y%m%d_%H%M%S).png"
+  FILE="/home/notlim_dev/Imágenes/ScreenShots/captura_$(date +%Y%m%d_%H%M%S).png"
   grim -g "$(slurp)" "$FILE" && wl-copy < "$FILE"
 }
 
