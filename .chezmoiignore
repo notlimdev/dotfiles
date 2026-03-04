@@ -3,3 +3,4 @@ README.md
  .config/mpd/mpdstate
  .config/mpd/mpd.db
  .config/mpd/playlists
+ .config/nushell/plugins/**
