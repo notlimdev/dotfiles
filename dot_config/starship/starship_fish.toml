@@ -3,7 +3,7 @@
 palette = 'catppuccin_mocha'
 
 format = """
-[┌──](fg:lavender)\
+[╭───](fg:lavender)\
 [](fg:base)\
 $os\
 $username\
@@ -26,7 +26,7 @@ $conda\
 $time\
 $cmd_duration\
 [ ](fg:snow)
-[└─](fg:lavender)\
+[╰─](fg:lavender)\
 $character
 """
 # -------------- TIME SCAN FILES -----
